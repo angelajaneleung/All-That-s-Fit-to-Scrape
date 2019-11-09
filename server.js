@@ -24,14 +24,12 @@ var request = require("request");
 var cheerio = require("cheerio");
 
 
-// If deployed, use the deployed database. Otherwise use the local mongoscraper database
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoscraper";
-// Set mongoose to leverage built in JavaScript ES6 Promises
-mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {
-  useMongoClient: true
+// If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
-});
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+
+
 
 
 
