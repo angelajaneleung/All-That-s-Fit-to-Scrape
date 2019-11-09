@@ -7,13 +7,15 @@
   .jumbotron-fluid{
   
     background-image: url(./image/images.jpg)
+    
   }
   .text-center{
     font-family: serif;
   } 
   body{
    
-    background-image: url(./image/Blue.jpg)
+    background-image: url(./image/Blue.jpg);
+    font-family: 'Pacifico', cursive;
   }
   
   #footerModal{
